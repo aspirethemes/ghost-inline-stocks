@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ghost Inline Stocks preview</title>
+<style>body{max-width:720px;margin:48px auto;padding:0 24px;font:20px/1.7 system-ui}h1{font-size:32px;line-height:1.2}h2{font-size:22px}aside{font-size:14px;color:#555;border-top:1px solid #ddd}</style>
+<body class="post-template"><h1>Ghost Inline Stocks</h1><p>A standalone article enhancement, based on Siwa.</p>
+<article data-post-content><h2>Tech stocks this week</h2><p>Apple $AAPL and Microsoft $MSFT lead this week's reading list. Another mention of $AAPL uses the same cached quote.</p><p>A loss: $TSLA. An unavailable quote stays readable: $FAIL.</p><p>These stay unchanged: <a href="#">$AAPL in a link</a>, <code>$MSFT in code</code>, $BRK.B and $lowercase.</p></article>
+<aside>Preview data is mocked. These are not current market prices.</aside>
+<script>window.fetch=async url=>{const symbol=new URL(url).searchParams.get('symbol');if(symbol==='FAIL')return {ok:false,status:404};return {ok:true,json:async()=>new URL(url).pathname.endsWith('quote')?{c:symbol==='TSLA'?250:150,dp:symbol==='TSLA'?-1.25:2.35}:{name:symbol,logo:''}}};</script>
+<script src="../dist/inline-stocks.min.js" data-inline-stocks-key="preview-only" defer></script></body></html>

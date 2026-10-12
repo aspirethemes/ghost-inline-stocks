@@ -1,0 +1,44 @@
+{
+  "name": "@aspirethemes/ghost-inline-stocks",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Inline stock quotes for Ghost posts.",
+  "license": "MIT",
+  "author": "Aspire Themes",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "docs"
+  ],
+  "exports": {
+    ".": "./dist/inline-stocks.module.js",
+    "./style.css": "./dist/inline-stocks.css"
+  },
+  "browser": "dist/inline-stocks.min.js",
+  "jsdelivr": "dist/inline-stocks.min.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.8",
+    "jsdom": "^26.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "homepage": "https://github.com/aspirethemes/ghost-inline-stocks#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspirethemes/ghost-inline-stocks.git"
+  },
+  "bugs": "https://github.com/aspirethemes/ghost-inline-stocks/issues",
+  "keywords": [
+    "ghost",
+    "stocks",
+    "finnhub",
+    "javascript",
+    "inline-quotes"
+  ]
+}
